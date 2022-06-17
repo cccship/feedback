@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="LAYOUTS/Lib/jquery/dist/jquery.js"></script>
+    <script src="LAYOUTS/Lib/feedback/feedback.js"></script>
+    <script src="LAYOUTS/Lib/ajaxhook/ajaxhook.min.js"></script>
+    <link href="LAYOUTS/Lib/feedback/feedback.css" rel="stylesheet" />
+    <link href="resources/uicon/css/all.css" rel="stylesheet" />
+    <script type="text/javascript">
+        $.feedback({
+            ajaxURL: 'demo/api/savefeedback',
+            onClose: function () {
+                window.location.reload();
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div class="demo" style="height:1200px;width:1000px">
+
+
+        <img src="Data/2022-06-12_221334.png" />
+
+    </div>
+    <button class="feedback-btn feedback-btn-gray feedbacka" style="display: inline-block;">反馈/建议</button>
+
+</body>
+</html>
